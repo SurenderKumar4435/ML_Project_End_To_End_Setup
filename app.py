@@ -1,9 +1,42 @@
+from src.logger import logging
+from src.exception import CustomException
+import sys
+from src.components.data_ingestion import DataIngestion
+from src.components.data_ingestion import DataIngestionConfig
+
+
+
+
+if __name__=="__main__":
+    logging.info("The execution has started")
+    try:
+        #data_ingestion_config = DataIngestionConfig()
+        data_ingestion = DataIngestion()
+        data_ingestion.initiate_data_ingestion()
+
+    except Exception as e:
+        logging_info("custom Exception")
+        raise CustomException(e,sys)
+
+
+
+
+
+
+'''
+## Web API--->>
+    
 from flask import Flask,request,jsonify,render_template 
 import pickle
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 from sklearn.tree import DecisionTreeRegressor
+
+
+
+
+
 
 app  = Flask(__name__)
 
@@ -50,3 +83,8 @@ def predict_datapoint():
 if __name__=="__main__":
     app.run(debug=True,host="0.0.0.0",port=5000)
 
+
+
+
+
+'''

@@ -5,3 +5,6 @@ scikit-learn
 gunicorn
 seaborn
 matplotlib
+mysql-connector-python   #---->  Library that read data in mysql
+pymysql                 #---->  Library that read data in mysql
+python-dotenv           #---->  Library that read all the  environment setup that create by user in the project
