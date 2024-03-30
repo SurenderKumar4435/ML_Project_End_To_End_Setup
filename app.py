@@ -6,7 +6,7 @@ from src.components.data_ingestion import DataIngestionConfig
 
 
 
-'''
+
 
 if __name__=="__main__":
     logging.info("The execution has started")
@@ -19,7 +19,7 @@ if __name__=="__main__":
         logging_info("custom Exception")
         raise CustomException(e,sys)
 
-'''
+
 
 
 
