@@ -46,8 +46,9 @@ app  = Flask(__name__)
 
 
 ## import pkl file----------------->>>>>>>>>
-process_model = pickle.load(open("notebook/preprocessor.pkl","rb"))
-standard_scaler = pickle.load(open("notebook/scaler2.pkl","rb"))
+process_model = pickle.load(open("notebook/reg.pkl","rb"))
+standard_scaler = pickle.load(open("notebook/scaler.pkl","rb"))
+
 
 
 ## Route for home page ---------->>>>>>>>>>>
