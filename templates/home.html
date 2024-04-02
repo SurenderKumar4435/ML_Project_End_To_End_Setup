@@ -3,39 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Document</title>
     
 </head>
 <body>
     
-        <h1>This is about Slaes Data Prediction</h1>
+        <h1>This is about Diabetes Data Prediction</h1>
 
          
             <form action="{{url_for('predict_datapoint')}}" method="post">
-                <input type="text" name="Order_ID" placeholder="Order_ID" required="required"  /><br>
-                <input type="text" name="Quantity_Ordered" placeholder="Quantity_Ordered" required="required"  /><br>
-                <input type="text" name="Price_Each" placeholder="Price_Each" required="required"  /><br>
-                <input type="text" name="Month" placeholder="Month" required="required"  /><br>
-                <input type="text" name="Day" placeholder="Day" required="required"  /><br>
-                <input type="text" name="Year" placeholder="Year" required="required"  /><br>
-                <input type="text" name="Hours" placeholder="Hours" required="required"  /><br>
-                <input type="text" name="Minute" placeholder="Minute" required="required"  /><br>
-                <input type="text" name="A" placeholder="A" required="required"  /><br>
-                <input type="text" name="B" placeholder="B" required="required"  /><br>
-                <input type="text" name="C" placeholder="C" required="required"  /><br>
-                <input type="text" name="D" placeholder="D" required="required"  /><br>
+                <input type="text" name="Pregnancies" placeholder="Pregnancies" required="required"  /><br>
+                <input type="text" name="Glucose" placeholder="Glucose" required="required"  /><br>
+                <input type="text" name="BloodPressure" placeholder="BloodPressure" required="required"  /><br>
+                <input type="text" name="SkinThickness" placeholder="SkinThickness" required="required"  /><br>
+                <input type="text" name="Insulin" placeholder="Insulin" required="required"  /><br>
+                <input type="text" name="BMI" placeholder="BMI" required="required"  /><br>
+                <input type="text" name="DiabetesPedigreeFunction" placeholder="DiabetesPedigreeFunction" required="required"  /><br>
+                <input type="text" name="Age" placeholder="Age" required="required"  /><br>
+                
                
                 
                 
                 
     
-    
-                <button type="submit" class="btn-block btn-large">Predict</button>
+                <button type="submit"class="btn-block btn-large">Predict</button>
     
             </form>
          <h2>
-           Total Sales :{{result}}
+           He /She heve diabeties or not :{{result}}
          </h2>
          
 
