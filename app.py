@@ -7,7 +7,7 @@ from flask import Flask,request,jsonify,render_template
 
 
 
-'''
+
 
 if __name__=="__main__":
     logging.info("The execution has started")
@@ -20,7 +20,7 @@ if __name__=="__main__":
         logging_info("custom Exception")
         raise CustomException(e,sys)
 
-'''
+
 
 
 
